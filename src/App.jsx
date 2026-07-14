@@ -5,14 +5,19 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import AddStd from './components/AddStd'
 import ViewStd from './components/ViewStd'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <AddStd/>
-     <ViewStd/>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<AddStd/>}/>
+      <Route path='/view' element={<ViewStd/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import NaviBar from "./NaviBar";
 
 
 const ViewStd = () => {
@@ -21,7 +22,7 @@ const ViewStd = () => {
     return (
         <div>
 
-           
+           <NaviBar/>
 
             <div className="container mt-5">
 

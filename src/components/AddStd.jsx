@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import NaviBar from "./NaviBar";
 
 
 const AddStd = () => {
@@ -65,7 +66,7 @@ const AddStd = () => {
     <div>
 
      
-
+<NaviBar/>
       <div className="container mt-4">
         <div className="row">
           <div className="col-12">
